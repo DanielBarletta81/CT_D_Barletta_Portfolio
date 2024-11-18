@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(135, 185, 230);
+    margin: 10px;
+  }
+
+  .welcome-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+
+  .img{
+    border: 5px;
+    border-style: double;
+  }
+
+  .section {
+    width: 100vw;
+    height: 40vh;
+    background-color: #90efc8;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    margin: 10px 5px;
+  }
+
+  .header{
+    background-color: #d7d8eb;
+    display: flex;
+    flex-direction: row;
+    border: 5px;
+  }
+
+
+  .nav_bar {
+    width: 100vw;
+    height: 10vh;
+    background-color: #d7d8eb;
+    padding: 5px;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  .icon {
+    background: url('db_logo.jpg');
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+  
+}
+
+  .a.nav_link {
+    color: white;
+    background-color: #6e8abb;
+    height: 40px;
+    width: 90px;
+    padding: 2px;
+    border: 2px solid black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: right;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: row;
+    justify-self: stretch;
+    border: 5px;
+    background-color: #d7d8eb;
+    padding: 5px;
+    margin: 10px;
+  }
