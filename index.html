@@ -12,7 +12,8 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body> 
-        <header>
+        <div class="grid_container">
+        <header class="header">
             
             <nav class="nav_bar" id="navbar">
                 <span class="icon"></span>
@@ -25,12 +26,12 @@
                 
             </nav>
     
-            <section class="" id="welcome-section">
+            <div class="welcome" id="welcome-section">
     
                 <h1 class="welcome-section">Welcome to Daniel Barletta's Portfolio!</h1>
               
-    
-            </section>
+            </div>
+         
         </header>
         
         <figure>
@@ -39,31 +40,92 @@
         </figure>
         <br>
 
-        <h4>Brief Bio</h4>
-        <h4>Welcome Message</h4>
-        <br>
-        
-       <!--Home Page/Section:
+ <!--Home Page/Section:
 The main landing page that provides an introduction to you and your portfolio.
 May include a brief bio, your name, a profile picture, and a welcome message.-->
-<section class="about_me">
-    <div id="about">
+<div class="bio">
+        <h4>Bio</h4>
+        <p>Hello, I'm Daniel! Thank you for visiting my portfolio page. 
+        I'm an aspiring software developer from Warwick, Rhode Island, 
+        and I'm currently enrolled in Coding Temple's software engineering bootcamp.
+        I have a background in biology, and I graduated from Rhode Island College with a BA 
+        in Biology. I went on to graduate studies in molecular biology, where I realized I could
+        use some developer skills to sift through data. That's when I decided to try learning
+        to code, just the basics, but I started to really enjoy the work so I kept going. I graduated
+        from MIT xPro's program in full-stack software development, and that is where I learned
+        MongoDB, Express, Node, and React. I am a nature-lover, and I enjoy the beach and anything to
+        do with the ocean. I have a wife, and two daughters who keep me busy and smiling. Feel free to reach out,
+        at the bottom of this page you can find links to my social media, and a form to submit your e-mail.
+        I hope to hear from you!
+    </p>
+        <br>
+        
+
+    <div class="about" id="about">
         <h3>About Me</h3>
     <br>
             <h4 class="background">Background</h4>
-                <p>Details here...</p> 
+            <br>
+
+                    <ul class="background_list">
+                        <li>Early Years</li>
+                        <p>I spent most of my childhood on our family boat during the summmers and working on 
+                            the boat during the winter. I always loved the local marine life and enjoyed being on the water.
+                            This is where I developed a fascination with biology and the tremendous variety of organisms, 
+                            especially in the marine environment.
+                        </p>
+                        <li>Travels</li>
+                        <p>My first major experience traveling was when I was 17, I went for my first semester in College
+                            at the University of the Virgin Islands where I played basketball and snorkeled between classes.
+                            In my 20's I moved to Guadalajara for a year, and about half of that time I was enrolled in a study abroad program.
+                            Both experiences have given me new perspectives on life, and a greater appreciation for different cultures.
+                        </p>
+                        <li>Writing</li>
+                        <p>I have always had a love for writing, and I always wanted to write creatively, mostly poetry and fiction, but 
+                            I've found the most value came from my personal journals and observations as a scientist. While working 
+                            as an intern, I was able to co-author my first scientific publication on Largemouth Bass mortality 
+                            and population dynamics which was the result of years of research. I have the ability to serve as a 
+                            technical writer, concise and clear, but the creative side of my writing is what I enjoy most. 
+            
+                        </p>
+                       
+                    </ul>
+        
         
             <h4 class="education">Education</h4>
-                <p>Details here...</p> 
+                
+                    <ol>
+                        <li>Coding Temple -- 2024 - Currently Enrolled</li>
+                        <li>M.I.T. xPro -- 2022 - Certificate - Full-Stack Software Development (MERN stack)</li>
+                        <li>Rhode Island College< -- 2013-2016 Graduate Studies in Molecular Biology</li>
+                        <li>Rhode Island College< -- Graduated 2007 - Bachelor's in Biology with Spanish minor</li>
+                        <li>Pilgrim High School -- 1999 - Diploma - College Prep</li>
+                    </ol>
+                
 
             <h4 class="career_goals">Career Goals</h4>
-                <p>Details here...</p> 
+                <ul>
+                    <li>Growth Mindset - It's important for me to be challenged, and to constantly evolve.</li>
+                    <li>Adaptation - Software Engineering continuously provides new technologies and platforms to be learned, 
+                        and I want to be on that cutting edge.</li>
+                    <li>Merge Interests - I'd like to find a career that provides the challenges listed above with
+                        my never-ending interest in the living world.
+                    </li>
+                    
+                </ul>
 
             <h4 class="interests">Interests</h4>
-                <p>Details here...</p> 
+                <ul>
+                    <li>Being Creative - I enjoy woodworking, writing, and drawing the most.</li>
+                    <li>The Ocean - I love being at the beach, especially at sunset, but I also love being on a boat 
+                        in the open water.
+                    </li>
+                    <li>Sports - I'm a big sports fan, I like football, basketball, and more recently pickleball!</li>
+                    <li>Reading/ Writing</li>
+                </ul>
         
     </div>
-</section>
+
         <br>
 <!--About Me Page/Section:
 A page that offers more detailed information about yourself.
@@ -71,47 +133,60 @@ Include your background, education, career goals, and personal interests.-->
 
 
 
-<section class="projects">
-    <div id="projects">
+
+    <div class="projects" id="projects">
         <h3 class="projects">My Projects</h3>
     <br>
         <h4 class="project_one">Library Management App</h4>
-            <p>Details here...</p> 
+            <p>
+                An application that allows users to add new customers, books, and authors
+                to a library. Written in Python, and connected to a MySQL database to store and retrieve
+                data. Check it out here: 
+                <a href="https://github.com/DanielBarletta81/CT_FS_Python_Library_MGMT">Library App</a>
+            </p> 
 
         <h4 class="project_two">E-Commerce App</h4>
-            <p>Details here...</p>  
+            <p>A Flask-MySQL application built to manage customers, products, and orders.
+                Check it out here:  <a href="https://github.com/DanielBarletta81/CT_FS_E-Commerce_Mini_Proj">E-Commerce App</a>
+          </p>  
 
         <h4 class="project_three">MERN Stack Banking App</h4> 
-            <p>Details here...</p>  
+            <p>A banking application that was my capstone project at M.I.T. xPro, utilizing MongoDB
+                for a database, Express and Node for backend functionality, and React to create a 
+                more pleasant frontend user experience.
+                Check it out here: <a href="https://github.com/DanielBarletta81/capstone-bankdb">Banking App</a>
+            </p> 
+             
     </div>
-</section>
+
         <br>
 <!--Projects Page/Section:
 Showcase your past projects and works.
 Include project descriptions, images, links, and any technologies or tools used.-->
-<section class="skills"> 
-    <div id="skills">
+ 
+    <div class="skills" id="skills">
         <h3 class="skills">My Skills</h3>
     <br>
-        <h4 class="skill_one">Python</h4> 
-            <p>python skills here</p>
+    <ul>
+        <li class="skill_one">Python</li> 
+            
 
-        <h4 class="skill_two">MySQL</h4> 
-            <p>MySQL skills here</p>
+        <li class="skill_two">MySQL</li> 
+            
 
-        <h4 class="skill_three">MERN Stack</h4> 
-            <p>MERN skills here</p> 
+        <li class="skill_three">MERN Stack</li> 
+            
 
-        <h4 class="skill_four">Javascript</h4> 
-            <p>MERN skills here</p> 
+        <li class="skill_four">Javascript</li> 
+    </ul>     
     </div>
-</section>
+
         <br>
 <!--Skills Page/Section:
 Highlight your technical skills, languages, frameworks, and software proficiency.
 You can use a visual representation like a skill bar or chart.-->
-  <section class="contact_me"> 
-    <div id="contact_me">
+  
+    <div class="contact_me" id="contact_me">
     <h3>Contact Me</h3>
         <h4>Enter your e-mail for a prompt response: </h4>
             <form action="input" method="post" aria-label="enter email">
@@ -120,7 +195,7 @@ You can use a visual representation like a skill bar or chart.-->
                         <button type="submit">Submit</button>
             </form>
         </div>
-        </section>
+       
         <br>
    
 
@@ -129,7 +204,7 @@ Provide a way for visitors to get in touch with you.
 Include a contact form, your email address, and links to your social media profiles.-->
 <section>
  <!--Footer1(start)-->
- <table id="footer" border="3" width="100%" 
+ <table class="footer" border="3" width="100%" 
  cellpadding="0" cellspacing="0" bgcolor="#99999">
  <tr>
      <td>
@@ -202,6 +277,6 @@ Include a contact form, your email address, and links to your social media profi
        
         <blockquote class="quote"  border="3" width="100%"> "Adopt the pace of nature: her secret is patience" - Ralph Waldo Emerson</blockquote>
     
-        
+    </div> 
     </body>
 </html>
